@@ -11,13 +11,13 @@ variable "aws-profile" {
 variable "instance-ami" {
   description = "The AMI (Amazon Machine Image) that identifies the instance"
   type        = "string"
-  default     = "ami-01419b804382064e4"
+  default     = ""
 }
 
 variable "instance-type" {
   description = "The instance type to be used"
   type        = "string"
-  default     = "t2.micro"
+  default     = ""
 }
 
 variable "instance-key-name" {
@@ -47,7 +47,7 @@ variable "user-data-script" {
 variable "instance-tag-name" {
   description = "instance-tag-name"
   type        = "string"
-  default     = "EC2-instance-created-with-terraform"
+  default     = ""
 }
 
 variable "vpc-cidr-block" {
@@ -65,23 +65,23 @@ variable "subnet-cidr-block" {
 variable "vpc-tag-name" {
   description = "The Name to apply to the VPC"
   type        = "string"
-  default     = "VPC-created-with-terraform"
+  default     = ""
 }
 
 variable "ig-tag-name" {
   description = "The name to apply to the Internet gateway tag"
   type        = "string"
-  default     = "aws-ig-created-with-terraform"
+  default     = ""
 }
 
 variable "subnet-tag-name" {
   description = "The Name to apply to the VPN"
   type        = "string"
-  default     = "VPN-created-with-terraform"
+  default     = ""
 }
 
 variable "sg-tag-name" {
   description = "The Name to apply to the security group"
   type        = "string"
-  default     = "SG-created-with-terraform"
+  default     = ""
 }
